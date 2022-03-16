@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<launch>
+    <node pkg = "automatic_charging" type = "Automatic_Charging_NODE" name = "Automatic_Charging_NODE">
+    	<!-- 低电压时的电压阈值 V -->
+        <param name="power_low" value="45.5"/>
+    	<!-- 当前电量值 单位 V -->
+        <param name="curr_low" value="42.5"/>
+    	<!-- 充满时的电压阈值  -->
+        <param name="power_full" value="53.5"/>
+    </node>
+
+</launch>
